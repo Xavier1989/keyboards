@@ -1,158 +1,159 @@
 {
-    "name": "HHKB Professional BT",
-    "vendorId": "0x0853",
-    "productId": "0x0100",
-    "matrix": { "rows": 5, "cols": 16 },
-    "customKeycodes": [{
-            "name": "BLE Pair",
-            "title": "[B_PAIR] Pair a new BLE device.",
-            "shortName": "PAIR"
-        },
-        {
-            "name": "BLE Device 1",
-            "title": "[BLE_DEV_1] Switch BLE connection to device 1.",
-            "shortName": "DEV1"
-        },
-        {
-            "name": "BLE Device 2",
-            "title": "[BLE_DEV_2] Switch BLE connection to device 2.",
-            "shortName": "DEV2"
-        },
-        {
-            "name": "BLE Device 3",
-            "title": "[BLE_DEV_3] Switch BLE connection to device 3.",
-            "shortName": "DEV3"
-        },
-        {
-            "name": "BLE Device 4",
-            "title": "[BLE_DEV_4] Switch BLE connection to device 4",
-            "shortName": "DEV4"
-        },
-        {
-            "name": "Clear All Bonds",
-            "title": "[BLE_CLEAR] Clear all ble bonds information",
-            "shortName": "CLR_A"
-        },
-        {
-            "name": "Enter Sleep",
-            "title": "[ENTER_SLEEP] Keyboard enter to sleep.",
-            "shortName": "SLEEP"
-        },
-        {
-            "name": "USB Mode",
-            "title": "[REPORT_USB] Enter USB mode / \u5207\u6362\u5230USB\u6a21\u5f0f",
-            "shortName": "USB"
-        },
-        {
-            "name": "BLE Mode",
-            "title": "[REPORT_BLE] Enter BLE mode.",
-            "shortName": "BLE"
-        },
-        {
-            "name": "Sleep Time +",
-            "title": "[SLP_TIM_IN] Increase auto sleep time. Unit 10 min",
-            "shortName": "SLEEP+"
-        },
-        {
-            "name": "Sleep Time -",
-            "title": "[SLP_TIM_DE] Decrese auto sleep time. Unit 10 min",
-            "shortName": "SLEEP-"
-        },
-        {
-            "name": "Enter DFU Mode",
-            "title": "[ENTER_DFU] Enter DFU mode before OTA.",
-            "shortName": "DFU"
-        }
-    ],
-    "layouts": {
-        "keymap": [
-            { "name": "HHKB" },
-            [
-                { "c": "#aaaaaa" },
-                "2,7",
-                { "c": "#cccccc" },
-                "2,5",
-                "2,6",
-                "2,4",
-                "2,2",
-                "2,1",
-                "2,3",
-                "2,0",
-                "2,15",
-                "2,13",
-                "2,14",
-                "2,12",
-                "2,10",
-                "2,9",
-                "2,8"
-            ],
-            [
-                { "c": "#aaaaaa", "w": 1.5 },
-                "1,7",
-                { "c": "#cccccc" },
-                "1,5",
-                "1,6",
-                "1,4",
-                "1,2",
-                "1,1",
-                "1,3",
-                "1,0",
-                "1,15",
-                "1,13",
-                "1,14",
-                "1,12",
-                "1,10",
-                { "c": "#aaaaaa", "w": 1.5 },
-                "1,8"
-            ],
-            [
-                { "w": 1.75 },
-                "0,7",
-                { "c": "#cccccc" },
-                "0,5",
-                "0,6",
-                "0,4",
-                "0,2",
-                "0,1",
-                "0,3",
-                "0,0",
-                "0,15",
-                "0,13",
-                "0,14",
-                "0,12",
-                { "c": "#aaaaaa", "w": 2.25 },
-                "0,8"
-            ],
-            [
-                { "w": 2.25 },
-                "3,7",
-                { "c": "#cccccc" },
-                "3,5",
-                "3,6",
-                "3,4",
-                "3,2",
-                "3,1",
-                "3,3",
-                "3,0",
-                "3,15",
-                "3,13",
-                "3,14",
-                { "c": "#aaaaaa", "w": 1.75 },
-                "3,10",
-                "3,11"
-            ],
-            [
-                { "x": 1.5 },
-                "4,7",
-                { "w": 1.5 },
-                "4,5",
-                { "c": "#cccccc", "w": 6 },
-                "4,3",
-                { "c": "#aaaaaa", "w": 1.5 },
-                "4,15",
-                "4,13"
-            ]
-        ],
-        "labels": []
+  "name": "HHKB Professional BT",
+  "vendorId": "0x0853",
+  "productId": "0x0101",
+  "matrix": {"rows": 5, "cols": 16},
+  "customKeycodes": [
+    {
+      "name": "BLE Pair",
+      "title": "[B_PAIR] Pair a new BLE device.",
+      "shortName": "PAIR"
+    },
+    {
+      "name": "BLE Device 1",
+      "title": "[BLE_DEV_1] Switch BLE connection to device 1.",
+      "shortName": "DEV1"
+    },
+    {
+      "name": "BLE Device 2",
+      "title": "[BLE_DEV_2] Switch BLE connection to device 2.",
+      "shortName": "DEV2"
+    },
+    {
+      "name": "BLE Device 3",
+      "title": "[BLE_DEV_3] Switch BLE connection to device 3.",
+      "shortName": "DEV3"
+    },
+    {
+      "name": "BLE Device 4",
+      "title": "[BLE_DEV_4] Switch BLE connection to device 4",
+      "shortName": "DEV4"
+    },
+    {
+      "name": "Clear All Bonds",
+      "title": "[BLE_CLEAR] Clear all ble bonds information",
+      "shortName": "CLR_A"
+    },
+    {
+      "name": "Enter Sleep",
+      "title": "[ENTER_SLEEP] Keyboard enter to sleep.",
+      "shortName": "SLEEP"
+    },
+    {
+      "name": "USB Mode",
+      "title": "[REPORT_USB] Enter USB mode / \u5207\u6362\u5230USB\u6a21\u5f0f",
+      "shortName": "USB"
+    },
+    {
+      "name": "BLE Mode",
+      "title": "[REPORT_BLE] Enter BLE mode.",
+      "shortName": "BLE"
+    },
+    {
+      "name": "Sleep Time +",
+      "title": "[SLP_TIM_IN] Increase auto sleep time. Unit 10 min",
+      "shortName": "SLEEP+"
+    },
+    {
+      "name": "Sleep Time -",
+      "title": "[SLP_TIM_DE] Decrese auto sleep time. Unit 10 min",
+      "shortName": "SLEEP-"
+    },
+    {
+      "name": "Enter DFU Mode",
+      "title": "[ENTER_DFU] Enter DFU mode before OTA.",
+      "shortName": "DFU"
     }
+  ],
+  "layouts": {
+    "keymap": [
+      {"name": "HHKB"},
+      [
+        {"c": "#aaaaaa"},
+        "2,7",
+        {"c": "#cccccc"},
+        "2,5",
+        "2,6",
+        "2,4",
+        "2,2",
+        "2,1",
+        "2,3",
+        "2,0",
+        "2,15",
+        "2,13",
+        "2,14",
+        "2,12",
+        "2,10",
+        "2,9",
+        "2,8"
+      ],
+      [
+        {"c": "#aaaaaa", "w": 1.5},
+        "1,7",
+        {"c": "#cccccc"},
+        "1,5",
+        "1,6",
+        "1,4",
+        "1,2",
+        "1,1",
+        "1,3",
+        "1,0",
+        "1,15",
+        "1,13",
+        "1,14",
+        "1,12",
+        "1,10",
+        {"c": "#aaaaaa", "w": 1.5},
+        "1,8"
+      ],
+      [
+        {"w": 1.75},
+        "0,7",
+        {"c": "#cccccc"},
+        "0,5",
+        "0,6",
+        "0,4",
+        "0,2",
+        "0,1",
+        "0,3",
+        "0,0",
+        "0,15",
+        "0,13",
+        "0,14",
+        "0,12",
+        {"c": "#aaaaaa", "w": 2.25},
+        "0,8"
+      ],
+      [
+        {"w": 2.25},
+        "3,7",
+        {"c": "#cccccc"},
+        "3,5",
+        "3,6",
+        "3,4",
+        "3,2",
+        "3,1",
+        "3,3",
+        "3,0",
+        "3,15",
+        "3,13",
+        "3,14",
+        {"c": "#aaaaaa", "w": 1.75},
+        "3,10",
+        "3,11"
+      ],
+      [
+        {"x": 1.5},
+        "4,7",
+        {"w": 1.5},
+        "4,5",
+        {"c": "#cccccc", "w": 6},
+        "4,3",
+        {"c": "#aaaaaa", "w": 1.5},
+        "4,15",
+        "4,13"
+      ]
+    ],
+    "labels": []
+  }
 }

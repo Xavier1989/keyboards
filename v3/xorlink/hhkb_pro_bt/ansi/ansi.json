@@ -3,6 +3,175 @@
   "vendorId": "0x0853",
   "productId": "0x0101",
   "matrix": {"rows": 5, "cols": 16},
+  "menus": [
+    {
+      "label": "Config",
+      "content": [
+        {
+          "label": "Layer",
+          "content": [
+            {
+              "label": "BLE Device 1 Default Layer",
+              "type": "dropdown",
+              "options": [
+                ["Layer 0", 0],
+                ["Layer 1", 1],
+                ["Layer 2", 2],
+                ["Layer 3", 3],
+                ["Layer 4", 4],
+                ["Layer 5", 5],
+                ["Layer 6", 6],
+                ["Layer 7", 7]
+              ],
+              "content": ["id_cfg_ble_dev1_layer", 16, 0]
+            },
+            {
+              "label": "BLE Device 2 Default Layer",
+              "type": "dropdown",
+              "options": [
+                ["Layer 0", 0],
+                ["Layer 1", 1],
+                ["Layer 2", 2],
+                ["Layer 3", 3],
+                ["Layer 4", 4],
+                ["Layer 5", 5],
+                ["Layer 6", 6],
+                ["Layer 7", 7]
+              ],
+              "content": ["id_cfg_ble_dev2_layer", 16, 1]
+            },
+            {
+              "label": "BLE Device 3 Default Layer",
+              "type": "dropdown",
+              "options": [
+                ["Layer 0", 0],
+                ["Layer 1", 1],
+                ["Layer 2", 2],
+                ["Layer 3", 3],
+                ["Layer 4", 4],
+                ["Layer 5", 5],
+                ["Layer 6", 6],
+                ["Layer 7", 7]
+              ],
+              "content": ["id_cfg_ble_dev3_layer", 16, 2]
+            },
+            {
+              "label": "BLE Device 4 Default Layer",
+              "type": "dropdown",
+              "options": [
+                ["Layer 0", 0],
+                ["Layer 1", 1],
+                ["Layer 2", 2],
+                ["Layer 3", 3],
+                ["Layer 4", 4],
+                ["Layer 5", 5],
+                ["Layer 6", 6],
+                ["Layer 7", 7]
+              ],
+              "content": ["id_cfg_ble_dev4_layer", 16, 3]
+            },
+            {
+              "label": "USB Device Default Layer",
+              "type": "dropdown",
+              "options": [
+                ["Layer 0", 0],
+                ["Layer 1", 1],
+                ["Layer 2", 2],
+                ["Layer 3", 3],
+                ["Layer 4", 4],
+                ["Layer 5", 5],
+                ["Layer 6", 6],
+                ["Layer 7", 7]
+              ],
+              "content": ["id_cfg_usb_dev_layer", 16, 4]
+            }
+          ]
+        },
+        {
+          "label": "Sleep",
+          "content": [
+            {
+              "label": "Allow Deep Sleep",
+              "type": "toggle",
+              "content": ["id_cfg_deep_sleep", 17, 1]
+            },
+            {
+              "label": "Auto Sleep Timeout",
+              "type": "dropdown",
+              "options": [
+                ["30 min", 30],
+                ["40 min", 40],
+                ["50 min", 50],
+                ["60 min", 60],
+                ["70 min", 70],
+                ["80 min", 80],
+                ["90 min", 90],
+                ["100 min", 100],
+                ["110 min", 110],
+                ["120 min", 120],
+                ["130 min", 130],
+                ["140 min", 140],
+                ["150 min", 150],
+                ["160 min", 160],
+                ["170 min", 170],
+                ["180 min", 180],
+                ["190 min", 190],
+                ["200 min", 200],
+                ["210 min", 210],
+                ["220 min", 220],
+                ["230 min", 230],
+                ["240 min", 240]
+              ],
+              "content": ["id_cfg_sleep_timeout", 17, 2]
+            }
+          ]
+        },
+        {
+          "label": "LED",
+          "content": [
+            {
+              "label": "Low Battery Indicator",
+              "type": "toggle",
+              "content": ["id_cfg_low_pwr_indicate", 21, 5]
+            }
+          ]
+        },
+        {
+          "label": "Reset",
+          "content": [
+            {
+              "label": "Factory Reset",
+              "type": "button",
+              "options": [1],
+              "content": ["id_cfg_factory_reset", 20, 4]
+            }
+          ]
+        },
+        {
+          "label": "Firmware",
+          "content": [
+            {
+              "label": "Keyboard Enter DFU Mode",
+              "type": "button",
+              "options": [1],
+              "content": ["id_cfg_dfu", 18, 0]
+            }
+          ]
+        },
+        {
+          "label": "Save",
+          "content": [
+            {
+              "label": "Save Current Config",
+              "type": "button",
+              "options": [1],
+              "content": ["id_cfg_save", 19, 3]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "customKeycodes": [
     {
       "name": "BLE Pair",
@@ -63,6 +232,11 @@
       "name": "Enter DFU Mode",
       "title": "[ENTER_DFU] Enter DFU mode before OTA.",
       "shortName": "DFU"
+    },
+    {
+      "name": "Firmware Version",
+      "title": "[FW_VER] Query firmware version.",
+      "shortName": "FW_VER"
     }
   ],
   "layouts": {
